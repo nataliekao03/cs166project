@@ -95,7 +95,7 @@ This guide provides a step-by-step approach on how to crack a WiFi WPA2 handshak
 
 ## Conclusion
 
-The password, once identified, can illustrate the importance of using strong, unpredictable passwords. For example, even a seemingly complex password like `p@ssw0rd!` can be vulnerable if it follows a predictable pattern.
+The password, once identified, can illustrate the importance of using strong, unpredictable passwords. For example, even a password like `p@ssw0rd!` with letters, special characters, and numbers can be vulnerable if it follows a predictable pattern.
 
 ## Disclaimer
 
