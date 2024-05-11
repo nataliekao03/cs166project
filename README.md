@@ -97,6 +97,35 @@ This guide provides a step-by-step approach on how to crack a WiFi WPA2 handshak
 
 The password, once identified, can illustrate the importance of using strong, unpredictable passwords. For example, even a password like `p@ssw0rd!` with letters, special characters, and numbers can be vulnerable if it follows a predictable pattern.
 
+## Preventing Dictionary Attacks
+
+Dictionary attacks exploit weak passwords by using large lists of common passwords and phrases. To protect against these attacks, it's crucial to adopt robust password policies and security measures.
+
+### Strong Password Policies
+
+1. **Length Matters**: The longer the password, the more combinations a hacker needs to try to crack it. Aim for passwords that are at least 12 characters long.
+
+2. **Complexity**: Use a mix of upper and lower case letters, numbers, and symbols. This diversity significantly increases the number of possible combinations.
+
+3. **Use Random Memorable Phrases**: Instead of single words, consider using random phrases that are easy for you to remember but hard for others to guess. These are less likely to appear in dictionaries.
+
+### Additional Security Strategies
+
+1. **Regular Password Changes**: Encourage or enforce regular password updates. Changing passwords periodically reduces the window of opportunity for a password to be cracked and misused.
+
+2. **Use Multi-Factor Authentication (MFA)**: Adding an additional layer of security by requiring a second form of identification drastically reduces the risk of unauthorized access, even if the password is compromised.
+
+3. **Account Lockout Policies**: Set up account lockouts after a certain number of unsuccessful login attempts. This can discourage brute-force attacks by making them time-consuming and easily detectable.
+
+4. **Educate Users**: Regularly educate users about the importance of security practices, especially regarding how to create strong passwords and recognize phishing attempts.
+
+5. **Avoid Common Pitfalls**: Advise against the use of easily accessible personal information in passwords, such as birthdays or names, as these can often be guessed or found through social engineering.
+
+6. **Use Password Managers**: Encourage the use of password managers. These tools can generate and store complex passwords, reducing the temptation to reuse passwords across multiple sites.
+
+Implementing these strategies can significantly enhance your network's security and resistance to dictionary attacks, protecting sensitive data from unauthorized access.
+
 ## Disclaimer
 
 This tutorial is for educational purposes only. Do not attempt to access networks without explicit permission from the rightful owners.
+
