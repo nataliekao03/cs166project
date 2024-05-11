@@ -2,6 +2,10 @@
 
 This guide provides a step-by-step approach on how to crack a WiFi WPA2 handshake using various tools on Kali Linux. It is intended for educational purposes only. Ensure you adhere to ethical hacking practices such as testing only on networks you own or have explicit permission to analyze.
 
+## Disclaimer
+
+This tutorial is for educational purposes only. Do not attempt to access networks without explicit permission from the rightful owners.
+
 ## Required Technologies and Tools
 
 ### Kali Linux
@@ -124,8 +128,3 @@ Dictionary attacks exploit weak passwords by using large lists of common passwor
 6. **Use Password Managers**: Encourage the use of password managers. These tools can generate and store complex passwords, reducing the temptation to reuse passwords across multiple sites.
 
 Implementing these strategies can significantly enhance your network's security and resistance to dictionary attacks, protecting sensitive data from unauthorized access.
-
-## Disclaimer
-
-This tutorial is for educational purposes only. Do not attempt to access networks without explicit permission from the rightful owners.
-
